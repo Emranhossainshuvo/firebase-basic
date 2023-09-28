@@ -9,6 +9,8 @@ import {
 import "./index.css";
 import Root from './components/Root/Root.jsx';
 import Home from './components/Home/Home.jsx';
+import Login from './components/Login/Login.jsx';
+import Register from './components/Register/Register.jsx';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
       {
         path: '/', 
         element: <Home></Home>
+      }, 
+      {
+        path: '/login', 
+        element: <Login></Login>
+      }, 
+      {
+        path: '/register', 
+        element: <Register></Register>
       }
     ]
   },
